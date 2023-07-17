@@ -1,0 +1,54 @@
+Get http://localhost:3000/property/search?type=office&status=sale&location=New+York
+
+###
+GET http://localhost:5000/property
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "ahmed",
+    "email": "ahmed.com",
+    "password":"ahmed123"
+}
+###
+POST http://localhost:5000/property
+Content-Type: application/json
+
+{
+    "title": "kjskj",
+    "description": "kjdsjks",
+    "price": 4378,
+    "location": "jkdsjk"
+}
+###
+GET http://localhost:5000/users/643f01f17be29c774f7bc7a7
+
+###
+GET http://localhost:5000/property/643f0904b4e7b0f58d88c626
+###
+PATCH http://localhost:5000/users/643f01f17be29c774f7bc7a7
+Content-Type: application/json
+
+{
+    "name": "weaaawe"
+}
+###
+PATCH http://localhost:5000/property/643f08e4b4e7b0f58d88c624
+Content-Type: application/json
+
+{
+    "description": "rrrrrrt",
+    "price": 454646
+}
+
+###
+DELETE http://localhost:5000/users/643f02287be29c774f7bc7a9
+###
+DELETE http://localhost:5000/property/643f0904b4e7b0f58d88c626
+###
+GET http://localhost:5000/jsjs
+
+###
+GET http://localhost:5000/test?name=imac&price=2399
